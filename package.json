@@ -1,0 +1,19 @@
+{
+  "name": "middleman-esbuild",
+  "version": "1.0.0",
+  "description": "Middleman 4 + ESBuild",
+  "repository": "",
+  "author": "Josué A. de Lima <josue@capslock.mx>",
+  "license": "MIT",
+  "dependencies": {
+    "esbuild": "^0.14.27",
+    "esbuild-rails": "^1.0.3",
+    "npm": "^8.5.5",
+    "sass": "^1.49.9",
+    "uikit": "^3.13.10"
+  },
+  "scripts": {
+    "build": "node esbuild.config.js",
+    "build:css": "sass ./source/assets/stylesheets/application.css.scss ./dist/application.css --no-source-map --load-path=node_modules"
+  }
+}

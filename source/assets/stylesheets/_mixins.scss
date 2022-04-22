@@ -1,0 +1,85 @@
+//Color
+@mixin color($name, $value) {
+
+  .#{$name} {
+    color: $value;
+  }
+
+  .bg-#{$name} {
+    background-color: $value;
+  }
+
+}
+
+//Transition
+@mixin transition($property...) {
+  -moz-transition:    $property;
+  -o-transition:      $property;
+  -webkit-transition: $property;
+  transition:         $property;
+}
+
+//Transform
+@mixin transform($transforms...) {
+  -moz-transform:    $transforms;
+  -o-transform:      $transforms;
+  -ms-transform:     $transforms;
+  -webkit-transform: $transforms;
+  transform:         $transforms;
+}
+
+//Rotate
+@mixin rotate($deg) {
+  @include transform( rotate(#{$deg}deg) );
+}
+
+//Rotate X
+@mixin rotateX($deg) {
+  @include transform( rotateX(#{$deg}deg) );
+}
+
+//Scale
+@mixin scale($scale) {
+  @include transform( scale($scale) );
+}
+
+//Translate
+@mixin translate($x, $y) {
+  @include transform( translate($x, $y) );
+}
+
+//Skew
+@mixin skew($x, $y) {
+  @include transform( skew(#{$x}deg, #{$y}deg) );
+}
+
+//Transform Origin
+@mixin transform-origin($origin...) {
+  -moz-transform-origin:    $origin;
+  -o-transform-origin:      $origin;
+  -ms-transform-origin:     $origin;
+  -webkit-transform-origin: $origin;
+  transform-origin:         $origin;
+}
+
+@mixin pulse {
+
+  .pulse {
+    animation-name: pulse_animation;
+    animation-duration: 3000ms;
+    transform-origin: 70% 70%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes pulse_animation {
+    0% { transform: scale(1); }
+    30% { transform: scale(1); }
+    40% { transform: scale(1.2); }
+    50% { transform: scale(1); }
+    60% { transform: scale(1); }
+    70% { transform: scale(1.1); }
+    80% { transform: scale(1); }
+    100% { transform: scale(1); }
+  }
+}
