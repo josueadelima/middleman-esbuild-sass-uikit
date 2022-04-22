@@ -2,7 +2,7 @@
 
 - [Middleman](https://middlemanapp.com)
 - [Yarn](https://yarnpkg.com)
-- [webpack](https://esbuild.github.io/)
+- [ESBuild](https://esbuild.github.io/)
 - [Sass](https://sass-lang.com)
 
 ### Installation
