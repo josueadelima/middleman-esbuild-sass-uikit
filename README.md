@@ -1,8 +1,8 @@
-## Middleman Webpack
+## Middleman ESBUild
 
 - [Middleman](https://middlemanapp.com)
 - [Yarn](https://yarnpkg.com)
-- [webpack](https://webpack.js.org) with [Babel](https://babeljs.org)
+- [webpack](https://esbuild.github.io/)
 - [Sass](https://sass-lang.com)
 
 ### Installation
