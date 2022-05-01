@@ -1,11 +1,10 @@
-const path = require('path')
-const rails = require('esbuild-rails')
+const path = require("path")
 
 require("esbuild").build({
-  entryPoints: ["application.js"],
   bundle: true,
-  outdir: path.join(process.cwd(), "/dist"),
-  absWorkingDir: path.join(process.cwd(), "/source/assets/javascripts"),
-  watch: true,
-  plugins: [rails()],
+  entryPoints: ["source/assets/javascripts/application.js"],
+  outdir: path.join(process.cwd(), ".tmp"),
+  watch: process.argv.includes("--watch"),
+  minify: process.argv.includes("--minify"),
+  sourcemap: process.argv.includes("--sourcemap"),
 }).catch(() => process.exit(1))

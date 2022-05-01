@@ -614,13 +614,6 @@ esbuild-openbsd-64@0.14.38:
   resolved "https://registry.yarnpkg.com/esbuild-openbsd-64/-/esbuild-openbsd-64-0.14.38.tgz#1ca29bb7a2bf09592dcc26afdb45108f08a2cdbd"
   integrity sha512-CDswYr2PWPGEPpLDUO50mL3WO/07EMjnZDNKpmaxUPsrW+kVM3LoAqr/CE8UbzugpEiflYqJsGPLirThRB18IQ==
 
-esbuild-rails@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/esbuild-rails/-/esbuild-rails-1.0.3.tgz#5b963c4affd9cbac3c3d589141062c4deabd5a19"
-  integrity sha512-a/bD6R3/VBynPD/ftQ6OpYNpjdeG2W30jZ1eEHd2aTsZBdK8ppuox3pZBv1M3c7ZPf+RicYM8cpx9MV/mVs2BA==
-  dependencies:
-    glob "^7.2.0"
-
 esbuild-sunos-64@0.14.38:
   version "0.14.38"
   resolved "https://registry.yarnpkg.com/esbuild-sunos-64/-/esbuild-sunos-64-0.14.38.tgz#c9446f7d8ebf45093e7bb0e7045506a88540019b"

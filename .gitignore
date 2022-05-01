@@ -5,6 +5,6 @@
 *.cache
 *.log
 build
-dist
 node_modules
 material
+.tmp
