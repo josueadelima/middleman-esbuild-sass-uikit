@@ -1,9 +1,9 @@
 ## Middleman ESBUild + Sass + Uikit
 
 - [Middleman](https://middlemanapp.com)
-- [Yarn](https://yarnpkg.com)
 - [ESBuild](https://esbuild.github.io/)
 - [Sass](https://sass-lang.com)
+- [Uikit](https://getuikit.com/)
 
 ### Installation
 ```
@@ -19,13 +19,6 @@ yarn install
 ### Development & Build
 
 ```
-middleman server
-middleman build --verbose
-```
-
-### Cucumber tests
-
-```
-brew tap homebrew/cask && brew cask install chromedriver
-bundle exec cucumber
+bundle exec middleman s
+bundle exec middleman b
 ```
