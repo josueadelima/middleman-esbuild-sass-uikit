@@ -14,7 +14,7 @@
   "scripts": {
     "watch": "node esbuild.config.js --watch",
     "build": "node esbuild.config.js --bundle --minify --sourcemap",
-    "watch:css": "sass source/assets/stylesheets/application.scss .tmp/application.css --load-path node_modules --style expanded --no-source-map",
+    "watch:css": "sass source/assets/stylesheets/application.scss .tmp/application.css --watch --load-path node_modules --style expanded --no-source-map",
     "build:css": "sass source/assets/stylesheets/application.scss .tmp/application.css --load-path node_modules --style compressed"
   }
 }
