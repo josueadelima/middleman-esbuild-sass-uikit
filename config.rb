@@ -11,7 +11,7 @@ set :js_dir,     'assets/javascripts'
 
 activate :external_pipeline,
          name: :esbuild_and_sass,
-         command: build? ? 'yarn run build && yarn run build:css' : 'yarn run watch && yarn run watch:css',
+         command: build? ? 'yarn run build & yarn run build:css' : 'yarn run watch & yarn run watch:css',
          source: '.tmp',
          latency: 1
 
