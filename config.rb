@@ -37,4 +37,6 @@ configure :build do
   activate :gzip
   activate :minify_css
   activate :relative_assets
+  # Netlify redirects
+  import_file File.expand_path('_redirects', config[:source]), '/_redirects'
 end
