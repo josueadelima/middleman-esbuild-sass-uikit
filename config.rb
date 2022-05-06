@@ -39,4 +39,6 @@ configure :build do
   activate :relative_assets
   # Netlify redirects
   import_file File.expand_path('_redirects', config[:source]), '/_redirects'
+  # For sitemap xml
+  config[:host] = 'https://example.com'
 end

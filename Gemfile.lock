@@ -10,6 +10,7 @@ GEM
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     backports (3.23.0)
+    builder (3.2.4)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -117,6 +118,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  builder (~> 3.0)
   middleman
   middleman-livereload
   rake
