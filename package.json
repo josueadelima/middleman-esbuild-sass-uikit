@@ -6,14 +6,14 @@
   "author": "Josué A. de Lima <josue@capslock.mx>",
   "license": "MIT",
   "dependencies": {
-    "esbuild": "^0.14.27",
-    "npm": "^8.5.5",
-    "sass": "^1.49.9",
-    "uikit": "^3.13.10"
+    "esbuild": "^0.23.0",
+    "npm": "^10.8.2",
+    "sass": "^1.77.8",
+    "uikit": "^3.21.9"
   },
   "scripts": {
-    "watch": "node esbuild.config.js --watch",
-    "build": "node esbuild.config.js --bundle --minify --sourcemap",
+    "watch": "node esbuild.config.mjs --watch",
+    "build": "node esbuild.config.mjs --bundle --minify --sourcemap",
     "watch:css": "sass source/assets/stylesheets/application.scss .tmp/application.css --watch --load-path node_modules --style expanded --no-source-map",
     "build:css": "sass source/assets/stylesheets/application.scss .tmp/application.css --load-path node_modules --style compressed"
   }
