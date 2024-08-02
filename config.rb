@@ -18,6 +18,9 @@ activate :external_pipeline,
          source: '.tmp',
          latency: 1
 
+# handled by npm sass
+ignore   File.join(config[:css_dir], '*.scss')
+
 activate :directory_indexes
 
 activate :livereload
@@ -31,10 +34,6 @@ configure :development do
 end
 
 configure :build do
-  # handled by esbuild
-  ignore   File.join(config[:js_dir], '*')
-  # handled by npm sass
-  ignore   File.join(config[:css_dir], '*')
   set      :relative_links, true
   activate :asset_hash
   activate :gzip
