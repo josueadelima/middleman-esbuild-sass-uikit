@@ -1,3 +1,6 @@
+# Temporary fix https://github.com/slim-template/slim/issues/909
+require 'action_view'
+
 # General config
 # http://localhost:4567/__middleman
 
